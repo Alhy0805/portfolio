@@ -23,6 +23,31 @@
     <span>Back</span>
   </a>
 
+  <div class="music-tab" style="position: fixed; left: 28px; bottom: 24px; z-index: 20; background: transparent; border: none; border-radius: 14px; padding: 0; box-shadow: none; backdrop-filter: none; color: #fff; font-family: 'Inter', sans-serif; display: flex; flex-direction: column; align-items: flex-start; gap: 10px;">
+    <div style="font-size: 11px; letter-spacing: 0.12em; text-transform: uppercase; opacity: 0.8; margin-bottom: 0; color: #fff;">Now Playing</div>
+    <div style="font-size: 18px; font-weight: 700; margin-bottom: 0; color: #fff;">Someday</div>
+    <button id="music-toggle" type="button" style="border: none; border-radius: 999px; padding: 8px 14px; background: transparent; color: #fff; font-weight: 700; cursor: pointer; box-shadow: none; border: 1px solid rgba(255,255,255,0.24);">Pause</button>
+    <audio id="iah-audio" src="audio/Someday.mp3" loop preload="auto"></audio>
+  </div>
+
+  <style>
+    #music-toggle {
+      position: relative;
+      z-index: 2;
+      margin-top: 0;
+      border: none;
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: transparent;
+      color: #fff;
+      font-weight: 700;
+      cursor: pointer;
+      box-shadow: none;
+      border: 1px solid rgba(255,255,255,0.24);
+      pointer-events: auto;
+    }
+  </style>
+
   <!-- Flower -->
   <div class="flowers">
     <div class="flower flower--1">
@@ -38,8 +63,7 @@
         <div class="flower__light flower__light--3"></div>
         <div class="flower__light flower__light--4"></div>
         <div class="flower__light flower__light--5"></div>
-        <div class="flower__light flower__light--6"></div>
-        <div class="flower__light flower__light--7"></div>
+        <div class="flower__light flower__light--6"></div>       
         <div class="flower__light flower__light--8"></div>
 
       </div>
